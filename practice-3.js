@@ -14,11 +14,20 @@ will print the result. For example:
 const mathematics=(x,y,operation)=>{
 const result= operation(x,y);
 console.log(result);
+if (result!==undefined) {
+    return result;
+} else {
+    return 'Invalid Operation'
+    
+}
+
+
 }
 
 const add=(x,y)=>x+y;
 const sub=(x,y)=>x-y;
 const multiply=(x,y)=>x*y;
 const divide=(x,y)=>x/y;
+const remaining=(x,y)=>x%y;
 
 mathematics(10,3,add)
